@@ -1,0 +1,7 @@
+2024-06-03 18:10:18,689 INFO  - Initialize Vehicle application (at simulation time 187.000,000,000 s)
+2024-06-03 18:10:18,691 INFO  - Activated WLAN Module (at simulation time 187.000,000,000 s)
+2024-06-03 18:10:18,693 INFO  - Called #onVehicleUpdated (at simulation time 187.000,000,000 s)
+2024-06-03 18:10:18,696 INFO  - Recieve a message from other vehicle (at simulation time 187.000,400,000 s)
+2024-06-03 18:10:18,696 INFO  - My position is not better! (at simulation time 187.000,400,000 s)
+2024-06-03 18:10:18,702 INFO  - Recieve a message from other vehicle (at simulation time 187.000,900,000 s)
+2024-06-03 18:10:18,702 INFO  - My position is not better! (at simulation time 187.000,900,000 s)

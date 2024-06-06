@@ -1,0 +1,74 @@
+12:15:15.788 INFO  - initializing database
+12:15:15.789 INFO  - loading database... 
+12:15:15.955 INFO  - success
+
+12:15:16.054 INFO  - Created /home/ivo/Desktop/NPR/eclipse-mosaic-23.1/converter/npr/application directory.
+12:15:16.055 INFO  - Created /home/ivo/Desktop/NPR/eclipse-mosaic-23.1/converter/npr/cell directory.
+12:15:16.056 INFO  - Created /home/ivo/Desktop/NPR/eclipse-mosaic-23.1/converter/npr/environment directory.
+12:15:16.056 INFO  - Created /home/ivo/Desktop/NPR/eclipse-mosaic-23.1/converter/npr/mapping directory.
+12:15:16.056 INFO  - Created /home/ivo/Desktop/NPR/eclipse-mosaic-23.1/converter/npr/ns3 directory.
+12:15:16.056 INFO  - Created /home/ivo/Desktop/NPR/eclipse-mosaic-23.1/converter/npr/omnetpp directory.
+12:15:16.057 INFO  - Created /home/ivo/Desktop/NPR/eclipse-mosaic-23.1/converter/npr/phabmacs directory.
+12:15:16.057 INFO  - Created /home/ivo/Desktop/NPR/eclipse-mosaic-23.1/converter/npr/sns directory.
+12:15:16.057 INFO  - Created /home/ivo/Desktop/NPR/eclipse-mosaic-23.1/converter/npr/sumo directory.
+12:15:16.057 INFO  - Created /home/ivo/Desktop/NPR/eclipse-mosaic-23.1/converter/npr/output directory.
+12:15:16.079 INFO  - Moving scenario DB to application directory.
+12:15:16.080 INFO  - Generating or copying npr.net.xml.
+12:15:16.082 INFO  - writing nodes information to: npr.nod.xml
+12:15:16.087 INFO  - writing node 1/5
+12:15:16.110 INFO  - writing node 2/5
+12:15:16.110 INFO  - writing node 3/5
+12:15:16.111 INFO  - writing node 4/5
+12:15:16.111 INFO  - writing node 5/5
+12:15:16.111 INFO  - -> successfully written 5 nodes
+12:15:16.112 INFO  - writing edges information to: npr.edg.xml
+12:15:16.146 INFO  - -> successfully written 8 edges
+12:15:16.147 INFO  - writing turn information to: npr.con.xml
+12:15:16.148 INFO  - writing turn information for connection 1/8
+12:15:16.148 INFO  - writing turn information for connection 2/8
+12:15:16.155 INFO  - writing turn information for connection 3/8
+12:15:16.156 INFO  - writing turn information for connection 4/8
+12:15:16.156 INFO  - writing turn information for connection 5/8
+12:15:16.156 INFO  - writing turn information for connection 6/8
+12:15:16.156 INFO  - writing turn information for connection 7/8
+12:15:16.157 INFO  - writing turn information for connection 8/8
+12:15:16.157 INFO  - -> successfully written 6 connections
+12:15:16.221 INFO  - executing netconvert...
+12:15:16.287 INFO  - netconvert log:
+12:15:16.288 INFO  - 	Success.
+12:15:16.288 INFO  - end of netconvert-log
+12:15:16.288 INFO  - netconvert errors:
+12:15:16.288 INFO  - end of netconvert-errors
+12:15:16.299 INFO  - writing configuration information to: npr.sumocfg
+12:15:16.310 INFO  - exporting routes...
+12:15:16.311 INFO  - writing routes information to: npr.rou.xml
+12:15:16.314 INFO  - Generating cell_config.json
+12:15:16.359 INFO  - Generating regions.json
+12:15:16.363 INFO  - Generating network.json
+12:15:16.424 INFO  - Generating environment_config.json.
+12:15:16.426 INFO  - Generating mapping_config.json.
+12:15:16.465 INFO  - Generating ns3_config.json
+12:15:16.471 INFO  - Generating ns3_federate_config.xml
+12:15:16.475 INFO  - Generating omnetpp_config.json
+12:15:16.477 INFO  - Generating omnetpp.ini
+12:15:16.490 INFO  - Generating sns_config.json
+12:15:16.513 INFO  - Generating output_config.xml
+12:15:16.515 INFO  - Generating scenario_config.json
+12:15:16.526 INFO  - writing network information to: npr.osm
+12:15:16.527 INFO  - writing nodes 0/5
+12:15:16.527 INFO  - writing nodes 1/5
+12:15:16.528 INFO  - writing nodes 2/5
+12:15:16.528 INFO  - writing nodes 3/5
+12:15:16.528 INFO  - writing nodes 4/5
+12:15:16.529 INFO  - writing ways 0/8
+12:15:16.529 INFO  - writing ways 1/8
+12:15:16.530 INFO  - writing ways 2/8
+12:15:16.530 INFO  - writing ways 3/8
+12:15:16.530 INFO  - writing ways 4/8
+12:15:16.531 INFO  - writing ways 5/8
+12:15:16.531 INFO  - writing ways 6/8
+12:15:16.531 INFO  - writing ways 7/8
+12:15:16.531 INFO  - Moving generated OSM to phabmacs directory
+12:15:16.532 INFO  - Generating phabmacs_config.json
+12:15:16.543 INFO  - Cleaning up work-directory
+12:15:16.545 INFO  - finished

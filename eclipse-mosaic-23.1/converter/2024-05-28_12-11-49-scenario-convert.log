@@ -1,0 +1,37 @@
+12:11:49.418 INFO  - initializing database
+12:11:49.419 INFO  - loading database... 
+12:11:49.590 INFO  - success
+
+12:11:49.598 INFO  - No net-file given. No network will be imported.
+12:11:49.607 INFO  - parsing route file
+12:11:49.683 INFO  - processing route 1/6,    
+12:11:49.685 INFO  - processing route 1/6,    edge 1/2
+12:11:49.685 INFO  - processing route 1/6,    edge 2/2
+12:11:49.687 INFO  - processing route 2/6,    
+12:11:49.687 INFO  - processing route 2/6,    edge 1/2
+12:11:49.687 INFO  - processing route 2/6,    edge 2/2
+12:11:49.687 INFO  - processing route 3/6,    
+12:11:49.687 INFO  - processing route 3/6,    edge 1/2
+12:11:49.687 INFO  - processing route 3/6,    edge 2/2
+12:11:49.687 INFO  - processing route 4/6,    
+12:11:49.688 INFO  - processing route 4/6,    edge 1/2
+12:11:49.688 INFO  - processing route 4/6,    edge 2/2
+12:11:49.688 INFO  - processing route 5/6,    
+12:11:49.688 INFO  - processing route 5/6,    edge 1/2
+12:11:49.688 INFO  - processing route 5/6,    edge 2/2
+12:11:49.689 INFO  - processing route 6/6,    
+12:11:49.689 INFO  - processing route 6/6,    edge 1/2
+12:11:49.689 INFO  - processing route 6/6,    edge 2/2
+12:11:49.689 INFO  - no vehicle definitions found
+12:11:49.689 INFO  - 
+
+12:11:49.790 INFO  - Saving 5 nodes...
+12:11:49.793 INFO  - Saving 8 ways...
+12:11:49.799 INFO  - Saving 8 connections...
+12:11:49.805 INFO  - Saving 10 restrictions...
+12:11:49.808 INFO  - Saving 6 routes...
+12:11:49.811 INFO  - Saving 0 roundabouts...
+12:11:49.811 INFO  - Saving 0 buildings...
+12:11:49.812 INFO  - Create Indices
+12:11:49.817 INFO  - Database saved
+12:11:49.817 INFO  - finished

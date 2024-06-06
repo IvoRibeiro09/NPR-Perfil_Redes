@@ -1,0 +1,6 @@
+2024-06-03 18:10:18,389 INFO  - Initialize Vehicle application (at simulation time 186.000,000,000 s)
+2024-06-03 18:10:18,391 INFO  - Activated WLAN Module (at simulation time 186.000,000,000 s)
+2024-06-03 18:10:18,399 INFO  - Called #onVehicleUpdated (at simulation time 186.000,000,000 s)
+2024-06-03 18:10:18,693 INFO  - Called #onVehicleUpdated (at simulation time 187.000,000,000 s)
+2024-06-03 18:10:18,694 INFO  - Define the name: veh_30 and route: r_0 (at simulation time 187.000,000,000 s)
+2024-06-03 18:10:18,694 INFO  - Sending out AdHoc broadcast (at simulation time 187.000,000,000 s)

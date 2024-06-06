@@ -1,0 +1,59 @@
+2024-06-03 19:54:20,777 WARN  SumoGuiAmbassador - The file scenarios/npr/sumo/sumo_config.json does not exist.
+2024-06-03 19:54:20,779 INFO  SumoGuiAmbassador - sumoConfig.updateInterval: 1000
+2024-06-03 19:54:20,780 INFO  SumoGuiAmbassador - sumoConfig.sumoConfigurationFile: null
+2024-06-03 19:54:20,786 INFO  SumoGuiAmbassador - Found a SUMO configuration file: scenarios/npr/sumo/npr.sumocfg
+2024-06-03 19:54:20,786 INFO  SumoGuiAmbassador - sumoConfig.sumoConfigurationFile: npr.sumocfg
+2024-06-03 19:54:20,809 INFO  SumoGuiAmbassador - Simulation step size is 1.0 sec.
+2024-06-03 19:54:22,375 INFO  SumoVehicleTypesWriter - ./tmp/sumo/mosaic_types.add.xml file successfully written.
+2024-06-03 19:54:22,375 INFO  SumoGuiAmbassador - Start Federate local
+2024-06-03 19:54:22,375 INFO  SumoGuiAmbassador - Directory: ./tmp/sumo
+2024-06-03 19:54:22,393 WARN  SumoGuiAmbassador - Error while connecting to SUMO. Retrying.
+2024-06-03 19:54:23,406 INFO  SumoGuiAmbassador - Process sumo: Loading configuration ... done.
+2024-06-03 19:54:29,806 ERROR TraciClientBridge - Close all TraCI streams due to an error
+java.net.SocketException: Connection reset
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:186)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:252)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:271)
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.eclipse.mosaic.fed.sumo.bridge.traci.AbstractTraciCommand.readResults(AbstractTraciCommand.java:236)
+	at org.eclipse.mosaic.fed.sumo.bridge.traci.AbstractTraciCommand.executeAndReturn(AbstractTraciCommand.java:149)
+	at org.eclipse.mosaic.fed.sumo.bridge.traci.SimulationGetVersion.execute(SimulationGetVersion.java:58)
+	at org.eclipse.mosaic.fed.sumo.bridge.TraciClientBridge.<init>(TraciClientBridge.java:107)
+	at org.eclipse.mosaic.fed.sumo.bridge.TraciClientBridge.<init>(TraciClientBridge.java:79)
+	at org.eclipse.mosaic.fed.sumo.ambassador.AbstractSumoAmbassador.initSumoConnection(AbstractSumoAmbassador.java:433)
+	at org.eclipse.mosaic.fed.sumo.ambassador.SumoAmbassador.sumoStartupProcedure(SumoAmbassador.java:205)
+	at org.eclipse.mosaic.fed.sumo.ambassador.SumoAmbassador.receiveInteraction(SumoAmbassador.java:199)
+	at org.eclipse.mosaic.fed.sumo.ambassador.SumoAmbassador.processInteraction(SumoAmbassador.java:105)
+	at org.eclipse.mosaic.rti.api.AbstractFederateAmbassador.advanceTime(AbstractFederateAmbassador.java:107)
+	at org.eclipse.mosaic.rti.time.SequentialTimeManagement.runSimulation(SequentialTimeManagement.java:91)
+	at org.eclipse.mosaic.starter.MosaicSimulation.runSimulation(MosaicSimulation.java:193)
+	at org.eclipse.mosaic.starter.MosaicStarter.execute(MosaicStarter.java:132)
+	at org.eclipse.mosaic.starter.MosaicStarter.main(MosaicStarter.java:74)
+2024-06-03 19:54:29,808 ERROR SumoGuiAmbassador - Error while trying to initialize SUMO ambassador.
+java.io.IOException: Could not load establish connection to SUMO due to an unknown error.
+	at org.eclipse.mosaic.fed.sumo.bridge.TraciClientBridge.<init>(TraciClientBridge.java:109)
+	at org.eclipse.mosaic.fed.sumo.bridge.TraciClientBridge.<init>(TraciClientBridge.java:79)
+	at org.eclipse.mosaic.fed.sumo.ambassador.AbstractSumoAmbassador.initSumoConnection(AbstractSumoAmbassador.java:433)
+	at org.eclipse.mosaic.fed.sumo.ambassador.SumoAmbassador.sumoStartupProcedure(SumoAmbassador.java:205)
+	at org.eclipse.mosaic.fed.sumo.ambassador.SumoAmbassador.receiveInteraction(SumoAmbassador.java:199)
+	at org.eclipse.mosaic.fed.sumo.ambassador.SumoAmbassador.processInteraction(SumoAmbassador.java:105)
+	at org.eclipse.mosaic.rti.api.AbstractFederateAmbassador.advanceTime(AbstractFederateAmbassador.java:107)
+	at org.eclipse.mosaic.rti.time.SequentialTimeManagement.runSimulation(SequentialTimeManagement.java:91)
+	at org.eclipse.mosaic.starter.MosaicSimulation.runSimulation(MosaicSimulation.java:193)
+	at org.eclipse.mosaic.starter.MosaicStarter.execute(MosaicStarter.java:132)
+	at org.eclipse.mosaic.starter.MosaicStarter.main(MosaicStarter.java:74)
+Caused by: org.eclipse.mosaic.rti.api.InternalFederateException: Error during reading response from TraCI command SimulationGetVersion.
+	at org.eclipse.mosaic.fed.sumo.bridge.traci.AbstractTraciCommand.readResults(AbstractTraciCommand.java:294)
+	at org.eclipse.mosaic.fed.sumo.bridge.traci.AbstractTraciCommand.executeAndReturn(AbstractTraciCommand.java:149)
+	at org.eclipse.mosaic.fed.sumo.bridge.traci.SimulationGetVersion.execute(SimulationGetVersion.java:58)
+	at org.eclipse.mosaic.fed.sumo.bridge.TraciClientBridge.<init>(TraciClientBridge.java:107)
+	... 10 common frames omitted
+Caused by: java.net.SocketException: Connection reset
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:186)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:252)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:271)
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.eclipse.mosaic.fed.sumo.bridge.traci.AbstractTraciCommand.readResults(AbstractTraciCommand.java:236)
+	... 13 common frames omitted

@@ -1,0 +1,30 @@
+2024-06-03 19:58:08,278 INFO  ROOT - Running Eclipse MOSAIC 23.1 on Java JRE v11.0.22 (Ubuntu)
+2024-06-03 19:58:08,445 INFO  MosaicStarter - Federate sumo: No port given. Using free port: 36563
+2024-06-03 19:58:08,505 INFO  FederationManagement - Start federation with id 'npr'
+2024-06-03 19:58:08,507 INFO  FederationManagement - Add ambassador/federate with id 'application'
+2024-06-03 19:58:08,509 INFO  FederationManagement - Add ambassador/federate with id 'mapping'
+2024-06-03 19:58:08,509 INFO  FederationManagement - Add ambassador/federate with id 'sns'
+2024-06-03 19:58:08,509 INFO  FederationManagement - Add ambassador/federate with id 'sumo'
+2024-06-03 19:58:08,510 INFO  FederationManagement - Deploying federate 'sumo' locally in ./tmp/sumo
+2024-06-03 19:58:08,515 INFO  FederationManagement - Starting federate 'sumo' locally in ./tmp/sumo
+2024-06-03 19:58:08,516 INFO  FederationManagement - Add ambassador/federate with id 'output'
+2024-06-03 19:58:08,516 INFO  OutputAmbassador - Initialize configuration of OutputAmbassador
+2024-06-03 19:58:08,564 WARN  FileOutputLoader - decimalSeparator is required to be one character, defaulting to '.' as decimal separator.
+2024-06-03 19:58:09,329 INFO  OutputAmbassador - Registered output generator 'websocket' for messages [RsuRegistration, VehicleRegistration, VehicleUpdates, V2xMessageReception, V2xMessageTransmission]. Update interval=1
+2024-06-03 19:58:09,330 INFO  OutputAmbassador - Registered output generator 'fileoutput' for messages [VehicleRegistration, VehicleUpdates]. Update interval=5
+2024-06-03 19:58:09,362 ERROR WebsocketVisualizerServer - WebsocketError
+java.net.BindException: Address already in use
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:459)
+	at java.base/sun.nio.ch.Net.bind(Net.java:448)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:73)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:330)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2024-06-03 19:58:27,158 INFO  SequentialTimeManagement - Simulation ended after 1000s of 1000s (100%)
+2024-06-03 19:58:27,159 INFO  SequentialTimeManagement - Started: 2024-06-03 19:58:09
+2024-06-03 19:58:27,159 INFO  SequentialTimeManagement - Ended: 2024-06-03 19:58:27
+2024-06-03 19:58:27,161 INFO  SequentialTimeManagement - Duration: 00h 00m 17.319s (RTF: 57.00)
+2024-06-03 19:58:27,161 INFO  SequentialTimeManagement - 
+2024-06-03 19:58:27,161 INFO  SequentialTimeManagement - Simulation finished: 101

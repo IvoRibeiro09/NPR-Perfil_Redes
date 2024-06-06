@@ -1,0 +1,11 @@
+2024-06-03 19:44:50,374 WARN  SumoGuiAmbassador - The file scenarios/npr/sumo/sumo_config.json does not exist.
+2024-06-03 19:44:50,376 INFO  SumoGuiAmbassador - sumoConfig.updateInterval: 1000
+2024-06-03 19:44:50,376 INFO  SumoGuiAmbassador - sumoConfig.sumoConfigurationFile: null
+2024-06-03 19:44:50,380 INFO  SumoGuiAmbassador - Found a SUMO configuration file: scenarios/npr/sumo/npr.sumocfg
+2024-06-03 19:44:50,380 INFO  SumoGuiAmbassador - sumoConfig.sumoConfigurationFile: npr.sumocfg
+2024-06-03 19:44:50,403 INFO  SumoGuiAmbassador - Simulation step size is 1.0 sec.
+2024-06-03 19:44:51,768 INFO  SumoVehicleTypesWriter - ./tmp/sumo/mosaic_types.add.xml file successfully written.
+2024-06-03 19:44:51,769 INFO  SumoGuiAmbassador - Start Federate local
+2024-06-03 19:44:51,769 INFO  SumoGuiAmbassador - Directory: ./tmp/sumo
+2024-06-03 19:44:51,782 WARN  SumoGuiAmbassador - Error while connecting to SUMO. Retrying.
+2024-06-03 19:44:52,804 INFO  SumoGuiAmbassador - Process sumo: Loading configuration ... done.

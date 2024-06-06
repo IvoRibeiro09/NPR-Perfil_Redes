@@ -1,0 +1,49 @@
+2024-06-03 19:56:40,590 INFO  ROOT - Running Eclipse MOSAIC 23.1 on Java JRE v11.0.22 (Ubuntu)
+2024-06-03 19:56:40,822 INFO  MosaicStarter - Federate sumo: No port given. Using free port: 37255
+2024-06-03 19:56:40,862 INFO  FederationManagement - Start federation with id 'npr'
+2024-06-03 19:56:40,863 INFO  FederationManagement - Add ambassador/federate with id 'application'
+2024-06-03 19:56:40,864 INFO  FederationManagement - Add ambassador/federate with id 'mapping'
+2024-06-03 19:56:40,865 INFO  FederationManagement - Add ambassador/federate with id 'sns'
+2024-06-03 19:56:40,865 INFO  FederationManagement - Add ambassador/federate with id 'sumo'
+2024-06-03 19:56:40,865 INFO  FederationManagement - Deploying federate 'sumo' locally in ./tmp/sumo
+2024-06-03 19:56:40,870 INFO  FederationManagement - Starting federate 'sumo' locally in ./tmp/sumo
+2024-06-03 19:56:40,870 INFO  FederationManagement - Add ambassador/federate with id 'output'
+2024-06-03 19:56:40,871 INFO  OutputAmbassador - Initialize configuration of OutputAmbassador
+2024-06-03 19:56:40,917 WARN  FileOutputLoader - decimalSeparator is required to be one character, defaulting to '.' as decimal separator.
+2024-06-03 19:56:41,440 INFO  OutputAmbassador - Registered output generator 'websocket' for messages [RsuRegistration, VehicleRegistration, VehicleUpdates, V2xMessageReception, V2xMessageTransmission]. Update interval=1
+2024-06-03 19:56:41,441 INFO  OutputAmbassador - Registered output generator 'fileoutput' for messages [VehicleRegistration, VehicleUpdates]. Update interval=5
+2024-06-03 19:56:41,455 ERROR WebsocketVisualizerServer - WebsocketError
+java.net.BindException: Address already in use
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:459)
+	at java.base/sun.nio.ch.Net.bind(Net.java:448)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:73)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:330)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2024-06-03 19:57:58,844 INFO  SequentialTimeManagement - Simulation ended after 292s of 1000s (29%)
+2024-06-03 19:57:58,845 INFO  SequentialTimeManagement - Started: 2024-06-03 19:56:41
+2024-06-03 19:57:58,846 INFO  SequentialTimeManagement - Ended: 2024-06-03 19:57:58
+2024-06-03 19:57:58,852 INFO  SequentialTimeManagement - Duration: 00h 01m 16.984s (RTF: 3.00)
+2024-06-03 19:57:58,866 INFO  SequentialTimeManagement - 
+2024-06-03 19:57:58,867 INFO  SequentialTimeManagement - Simulation interrupted: -1
+2024-06-03 19:57:59,093 ERROR MosaicStarter - Stopping simulation due to a critical error.
+org.eclipse.mosaic.rti.api.InternalFederateException: Error during reading response from TraCI command SimulationSimulateStep.
+	at org.eclipse.mosaic.fed.sumo.ambassador.AbstractSumoAmbassador.processTimeAdvanceGrant(AbstractSumoAmbassador.java:1247)
+	at org.eclipse.mosaic.rti.api.AbstractFederateAmbassador.advanceTime(AbstractFederateAmbassador.java:110)
+	at org.eclipse.mosaic.rti.time.SequentialTimeManagement.runSimulation(SequentialTimeManagement.java:91)
+	at org.eclipse.mosaic.starter.MosaicSimulation.runSimulation(MosaicSimulation.java:193)
+	at org.eclipse.mosaic.starter.MosaicStarter.execute(MosaicStarter.java:132)
+	at org.eclipse.mosaic.starter.MosaicStarter.main(MosaicStarter.java:74)
+Caused by: org.eclipse.mosaic.rti.api.InternalFederateException: Error during reading response from TraCI command SimulationSimulateStep.
+	at org.eclipse.mosaic.fed.sumo.bridge.traci.AbstractTraciCommand.readResults(AbstractTraciCommand.java:294)
+	at org.eclipse.mosaic.fed.sumo.bridge.traci.AbstractTraciCommand.executeAndReturnList(AbstractTraciCommand.java:131)
+	at org.eclipse.mosaic.fed.sumo.bridge.traci.SimulationSimulateStep.execute(SimulationSimulateStep.java:64)
+	at org.eclipse.mosaic.fed.sumo.bridge.facades.SimulationFacade.simulateUntil(SimulationFacade.java:435)
+	at org.eclipse.mosaic.fed.sumo.ambassador.AbstractSumoAmbassador.processTimeAdvanceGrant(AbstractSumoAmbassador.java:1227)
+	... 5 common frames omitted
+Caused by: java.io.EOFException: null
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:397)
+	at org.eclipse.mosaic.fed.sumo.bridge.traci.AbstractTraciCommand.readResults(AbstractTraciCommand.java:236)
+	... 9 common frames omitted

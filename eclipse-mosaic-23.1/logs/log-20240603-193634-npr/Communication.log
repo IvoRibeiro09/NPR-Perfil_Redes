@@ -1,0 +1,3 @@
+2024-06-03 19:36:36,110 INFO  SnsAmbassador - Init simulation with startTime=0, endTime=1000000000000
+2024-06-03 19:36:36,135 INFO  SnsAmbassador - Initialized SNS
+2024-06-03 19:37:06,806 INFO  SnsAmbassador - Finished simulation

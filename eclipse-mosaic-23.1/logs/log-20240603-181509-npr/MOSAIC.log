@@ -1,0 +1,54 @@
+2024-06-03 18:15:10,187 INFO  ROOT - Running Eclipse MOSAIC 23.1 on Java JRE v11.0.22 (Ubuntu)
+2024-06-03 18:15:10,313 INFO  MosaicStarter - Federate sumo: No port given. Using free port: 40477
+2024-06-03 18:15:10,338 INFO  FederationManagement - Start federation with id 'npr'
+2024-06-03 18:15:10,339 INFO  FederationManagement - Add ambassador/federate with id 'application'
+2024-06-03 18:15:10,340 INFO  FederationManagement - Add ambassador/federate with id 'mapping'
+2024-06-03 18:15:10,341 INFO  FederationManagement - Add ambassador/federate with id 'sns'
+2024-06-03 18:15:10,341 INFO  FederationManagement - Add ambassador/federate with id 'sumo'
+2024-06-03 18:15:10,341 INFO  FederationManagement - Deploying federate 'sumo' locally in ./tmp/sumo
+2024-06-03 18:15:10,344 INFO  FederationManagement - Starting federate 'sumo' locally in ./tmp/sumo
+2024-06-03 18:15:10,344 INFO  FederationManagement - Add ambassador/federate with id 'output'
+2024-06-03 18:15:10,345 INFO  OutputAmbassador - Initialize configuration of OutputAmbassador
+2024-06-03 18:15:10,380 WARN  FileOutputLoader - decimalSeparator is required to be one character, defaulting to '.' as decimal separator.
+2024-06-03 18:15:10,703 INFO  OutputAmbassador - Registered output generator 'websocket' for messages [RsuRegistration, VehicleRegistration, VehicleUpdates, V2xMessageReception, V2xMessageTransmission]. Update interval=1
+2024-06-03 18:15:10,704 INFO  OutputAmbassador - Registered output generator 'fileoutput' for messages [VehicleRegistration, VehicleUpdates]. Update interval=5
+2024-06-03 18:15:10,711 ERROR WebsocketVisualizerServer - WebsocketError
+java.net.BindException: Address already in use
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:459)
+	at java.base/sun.nio.ch.Net.bind(Net.java:448)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:73)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:330)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2024-06-03 18:15:13,820 INFO  SequentialTimeManagement - Simulation ended after 30s of 1000s (3%)
+2024-06-03 18:15:13,820 INFO  SequentialTimeManagement - Started: 2024-06-03 18:15:10
+2024-06-03 18:15:13,821 INFO  SequentialTimeManagement - Ended: 2024-06-03 18:15:13
+2024-06-03 18:15:13,822 INFO  SequentialTimeManagement - Duration: 00h 00m 02.835s (RTF: 10.00)
+2024-06-03 18:15:13,822 INFO  SequentialTimeManagement - 
+2024-06-03 18:15:13,822 INFO  SequentialTimeManagement - Simulation interrupted: -1
+2024-06-03 18:15:14,028 ERROR MosaicStarter - Stopping simulation due to a critical error.
+org.eclipse.mosaic.rti.api.InternalFederateException: Error code: 0x01000013: There was an error during an advance time.
+	at org.eclipse.mosaic.fed.application.ambassador.ApplicationAmbassador.processTimeAdvanceGrant(ApplicationAmbassador.java:247)
+	at org.eclipse.mosaic.rti.api.AbstractFederateAmbassador.advanceTime(AbstractFederateAmbassador.java:110)
+	at org.eclipse.mosaic.rti.time.SequentialTimeManagement.runSimulation(SequentialTimeManagement.java:91)
+	at org.eclipse.mosaic.starter.MosaicSimulation.runSimulation(MosaicSimulation.java:193)
+	at org.eclipse.mosaic.starter.MosaicStarter.execute(MosaicStarter.java:132)
+	at org.eclipse.mosaic.starter.MosaicStarter.main(MosaicStarter.java:74)
+Caused by: java.lang.RuntimeException: java.lang.RuntimeException: Error code: 0x01000040: Uncaught exception during process event in an application.
+	at org.eclipse.mosaic.lib.util.scheduling.Event.execute(Event.java:226)
+	at org.eclipse.mosaic.lib.util.scheduling.DefaultEventScheduler.scheduleEvents(DefaultEventScheduler.java:85)
+	at org.eclipse.mosaic.fed.application.ambassador.ApplicationAmbassador.processTimeAdvanceGrant(ApplicationAmbassador.java:241)
+	... 5 common frames omitted
+Caused by: java.lang.RuntimeException: Error code: 0x01000040: Uncaught exception during process event in an application.
+	at org.eclipse.mosaic.fed.application.ambassador.simulation.AbstractSimulationUnit.preProcessEvent(AbstractSimulationUnit.java:192)
+	at org.eclipse.mosaic.fed.application.ambassador.simulation.RoadSideUnit.processEvent(RoadSideUnit.java:64)
+	at org.eclipse.mosaic.lib.util.scheduling.Event.execute(Event.java:223)
+	... 7 common frames omitted
+Caused by: java.util.ConcurrentModificationException: null
+	at java.base/java.util.ArrayList$Itr.checkForComodification(ArrayList.java:1043)
+	at java.base/java.util.ArrayList$Itr.next(ArrayList.java:997)
+	at eclipse.mosaic.apps.RoadSideUnitApp.trafficLightControl(RoadSideUnitApp.java:62)
+	at org.eclipse.mosaic.fed.application.ambassador.simulation.AbstractSimulationUnit.preProcessEvent(AbstractSimulationUnit.java:190)
+	... 9 common frames omitted

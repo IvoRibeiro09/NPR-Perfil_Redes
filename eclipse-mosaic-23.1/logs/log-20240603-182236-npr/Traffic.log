@@ -1,0 +1,38 @@
+2024-06-03 18:22:36,575 WARN  SumoGuiAmbassador - The file scenarios/npr/sumo/sumo_config.json does not exist.
+2024-06-03 18:22:36,576 INFO  SumoGuiAmbassador - sumoConfig.updateInterval: 1000
+2024-06-03 18:22:36,576 INFO  SumoGuiAmbassador - sumoConfig.sumoConfigurationFile: null
+2024-06-03 18:22:36,579 INFO  SumoGuiAmbassador - Found a SUMO configuration file: scenarios/npr/sumo/npr.sumocfg
+2024-06-03 18:22:36,579 INFO  SumoGuiAmbassador - sumoConfig.sumoConfigurationFile: npr.sumocfg
+2024-06-03 18:22:36,595 INFO  SumoGuiAmbassador - Simulation step size is 1.0 sec.
+2024-06-03 18:22:37,338 INFO  SumoVehicleTypesWriter - ./tmp/sumo/mosaic_types.add.xml file successfully written.
+2024-06-03 18:22:37,338 INFO  SumoGuiAmbassador - Start Federate local
+2024-06-03 18:22:37,339 INFO  SumoGuiAmbassador - Directory: ./tmp/sumo
+2024-06-03 18:22:37,346 WARN  SumoGuiAmbassador - Error while connecting to SUMO. Retrying.
+2024-06-03 18:22:38,361 INFO  SumoGuiAmbassador - Process sumo: Loading configuration ... done.
+2024-06-03 18:22:42,100 WARN  TraciClientBridge - This TraCI API version 21 is currently not supported (but might work anyhow).
+2024-06-03 18:22:42,113 INFO  SumoGuiAmbassador - Current API version of SUMO is 20 (=SUMO 1.18.*)
+2024-06-03 18:22:42,180 WARN  TrafficLightGetControlledJunctions - Could not return list of controlled junctions for traffic light. Not implemented in SUMO yet.
+2024-06-03 18:22:42,367 INFO  SumoGuiAmbassador - TrafficLightSubscription interaction received at simulation time 0.000,000,000 s: Subscribe to Traffic light group with ID=J9
+2024-06-03 18:22:42,378 INFO  SumoGuiAmbassador - Receive TrafficLightStateChange request
+2024-06-03 18:22:42,378 INFO  SumoGuiAmbassador - Changing program of traffic light group 'J9' to program id '0'
+2024-06-03 18:22:43,351 INFO  SumoGuiAmbassador - VehicleRegistration from RTI "veh_0" received at simulation time 5000000000 ns (subscribe=true)
+2024-06-03 18:22:43,351 INFO  SumoGuiAmbassador - VehicleRegistration from RTI "veh_1" received at simulation time 5000000000 ns (subscribe=true)
+2024-06-03 18:22:43,351 INFO  SumoGuiAmbassador - VehicleRegistration from RTI "veh_2" received at simulation time 5000000000 ns (subscribe=true)
+2024-06-03 18:22:43,352 INFO  SumoGuiAmbassador - VehicleRegistration from RTI "veh_3" received at simulation time 5000000000 ns (subscribe=true)
+2024-06-03 18:22:43,352 INFO  SumoGuiAmbassador - VehicleRegistration from RTI "veh_4" received at simulation time 5000000000 ns (subscribe=true)
+2024-06-03 18:22:43,352 INFO  SumoGuiAmbassador - VehicleRegistration from RTI "veh_5" received at simulation time 5000000000 ns (subscribe=true)
+2024-06-03 18:22:43,352 INFO  SumoGuiAmbassador - Adding new vehicle "veh_0" at simulation time 5000000000 ns (type=Car, routeId=r_0, laneId=best, departPos=0.00)
+2024-06-03 18:22:43,354 INFO  SumoGuiAmbassador - Adding new vehicle "veh_1" at simulation time 5000000000 ns (type=Car, routeId=r_2, laneId=best, departPos=0.00)
+2024-06-03 18:22:43,355 INFO  SumoGuiAmbassador - Adding new vehicle "veh_2" at simulation time 5000000000 ns (type=Car, routeId=r_1, laneId=best, departPos=0.00)
+2024-06-03 18:22:43,355 INFO  SumoGuiAmbassador - Adding new vehicle "veh_3" at simulation time 5000000000 ns (type=Car, routeId=r_4, laneId=best, departPos=0.00)
+2024-06-03 18:22:43,356 INFO  SumoGuiAmbassador - Adding new vehicle "veh_4" at simulation time 5000000000 ns (type=Car, routeId=r_3, laneId=best, departPos=0.00)
+2024-06-03 18:22:43,357 INFO  SumoGuiAmbassador - Adding new vehicle "veh_5" at simulation time 5000000000 ns (type=Car, routeId=r_5, laneId=best, departPos=0.00)
+2024-06-03 18:22:45,368 INFO  SumoGuiAmbassador - Receive VehicleSpeedChange request at simulation time 13.224,785,363 s: vehicleId="veh_3", targetSpeed=0.0m/s, interval=0ms
+2024-06-03 18:22:45,369 INFO  SumoGuiAmbassador - Receive VehicleSpeedChange request at simulation time 13.229,738,016 s: vehicleId="veh_5", targetSpeed=0.0m/s, interval=0ms
+2024-06-03 18:22:45,613 INFO  SumoGuiAmbassador - Receive VehicleSpeedChange request at simulation time 14.000,900,000 s: vehicleId="veh_3", targetSpeed=0.0m/s, interval=0ms
+2024-06-03 18:22:45,624 INFO  SumoGuiAmbassador - Receive VehicleSpeedChange request at simulation time 14.625,859,252 s: vehicleId="veh_1", targetSpeed=0.0m/s, interval=0ms
+2024-06-03 18:22:45,872 INFO  SumoGuiAmbassador - Receive VehicleSpeedChange request at simulation time 15.323,254,660 s: vehicleId="veh_0", targetSpeed=0.0m/s, interval=0ms
+2024-06-03 18:22:46,105 INFO  SumoGuiAmbassador - Receive VehicleSpeedChange request at simulation time 16.019,111,819 s: vehicleId="veh_4", targetSpeed=0.0m/s, interval=0ms
+2024-06-03 18:22:46,604 INFO  SumoGuiAmbassador - Receive VehicleSpeedChange request at simulation time 18.000,400,000 s: vehicleId="veh_1", targetSpeed=0.0m/s, interval=0ms
+2024-06-03 18:22:47,356 INFO  SumoGuiAmbassador - Receive VehicleSpeedChange request at simulation time 21.641,427,977 s: vehicleId="veh_2", targetSpeed=0.0m/s, interval=0ms
+2024-06-03 18:22:47,604 INFO  SumoGuiAmbassador - Receive VehicleSpeedChange request at simulation time 22.000,400,000 s: vehicleId="veh_5", targetSpeed=0.0m/s, interval=0ms
