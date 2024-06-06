@@ -1,0 +1,8 @@
+<connections>
+	<connection from="-E9" to="-E8" />
+	<connection from="-E9" to="E10" />
+	<connection from="-E10" to="E9" />
+	<connection from="-E10" to="-E7" />
+	<connection from="E7" to="-E8" />
+	<connection from="E8" to="-E7" />
+</connections>
