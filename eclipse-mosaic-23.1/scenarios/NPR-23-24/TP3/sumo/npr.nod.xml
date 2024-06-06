@@ -1,0 +1,7 @@
+<nodes>
+	<node id="J10" x="547560.60" y="4600428.71" z="0.00" type="priority" />
+	<node id="J11" x="547460.60" y="4600328.71" z="0.00" type="priority" />
+	<node id="J12" x="547460.60" y="4600528.71" z="0.00" type="priority" />
+	<node id="J8" x="547360.60" y="4600428.71" z="0.00" type="priority" />
+	<node id="J9" x="547460.60" y="4600428.71" z="0.00" type="traffic_light" />
+</nodes>
