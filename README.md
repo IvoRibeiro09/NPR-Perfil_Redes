@@ -4,5 +4,5 @@ Novos Paradigmas de Rede
 Perfil de redes de nova Géração
 
 # App
-Simulador de simafros inteligentes com redes AD-hoc
+Simulador de semaforosinteligentes com redes AD-hoc
 (Sistemas)- Sumo e mosaic eclipse
